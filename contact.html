@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css files/styles.css">
+    <script src="./javascript files/index.js" defer></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <nav class="navigation">
+            <button class="toggle-button" onclick="toggleNav()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="logo-container">
+                <img class="logo" src="./image files/logo.png" alt="Raza Restaurant Logo">
+            </div>
+            <a href="homepage.html" target="main_page">Home</a>
+            <a href="menu.html" target="main_page">Menu</a>
+            <a href="reservation.html" target="main_page">Reservations</a>
+            <a href="about.html" target="main_page">About</a>
+            <a href="contact.html" target="main_page">Contact us</a>
+            <a id="login-logout-link" href="login.html" target="main_page">Login</a>
+        </nav>
+    </div>
+    <div class="contact_body">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <div class="info-box">
+                    <div class="icon">&#128205;</div>
+                    <p>Wood Ave, Nairobi, Kenya</p>
+                </div>
+                <div class="info-box">
+                    <div class="icon">&#9742;</div>
+                    <p>+254 741645531</p>
+                </div>
+                <div class="info-box">
+                    <div class="icon">&#9993;</div>
+                    <p>Raza@gmail.com</p>
+                </div>
+            </div>
+            <form id="contactForm" action="./php files/contact.php" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms"><a href="#">I accept the Terms of Service</a></label>
+                </div>
+                <button type="submit">SUBMIT</button>
+                <div id="formResponse"></div>
+            </form>
+            <p>Don't have an account? <a href="signup.html" onclick="toggleAuthForms()">Sign up here</a></p>
+        </div>
+    </div>
+</body>
+</html>

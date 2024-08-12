@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css files/styles.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <nav class="navigation">
+            <button class="toggle-button" onclick="toggleNav()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="logo-container">
+                <img class="logo" src="./image files/logo.png" alt="Raza Restaurant Logo">
+            </div>
+            <a class="active" href="homepage.html" target="main_page">Home</a>
+            <a href="menu.html" target="main_page">Menu</a>
+            <a href="reservation.html" target="main_page">Reservations</a>
+            <a href="about.html" target="main_page">About</a>
+            <a href="contact.html" target="main_page">Contact us</a>
+            <a id="login-logout-link" href="signup.html" target="main_page">Signup</a>
+        </nav>
+    </div>
+<div class="login-body">
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm" action="./php files/login_process.php" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html" onclick="toggleAuthForms()">Sign up here</a></p>
+    </div>
+</div>
+</body>
+</html>

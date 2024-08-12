@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raza Menu Page</title>
+    <link rel="stylesheet" href="./css files/styles.css">
+    <script src="./javascript files/index.js" defer></script>
+</head>
+<body class="menu">
+    <div class="topnav" id="myTopnav">
+        <nav class="navigation">
+            <button class="toggle-button" onclick="toggleNav()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="logo-container">
+                <img class="logo" src="./image files/logo.png" alt="Raza Restaurant Logo">
+            </div>
+            <a class="active" href="homepage.html" target="main_page">Home</a>
+            <a href="menu.html" target="main_page">Menu</a>
+            <a href="reservation.html" target="main_page">Reservations</a>
+            <a href="about.html" target="main_page">About</a>
+            <a href="contact.html" target="main_page">Contact us</a>
+            <a id="login-logout-link" href="login.html" target="main_page">Login</a>
+        </nav>
+    </div>
+    <h1>Menu</h1>
+    <h2>Dishes</h2>
+    <main class="main-content">
+        <div class="menu-item">
+            <img src="./image files/Doro wat.jpeg" alt="Doro Wat" class="menu-image">
+            <h3>Doro Wot</h3>
+            <p>Spicy Chicken with Eggs</p>
+            <p>Price: 400 ksh</p>
+            <button class="order-button" type="button">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="./image files/Beyayenetu.jpg" alt="Beyayenetu" class="menu-image">
+            <h3>Beyayenetu</h3>
+            <p>Mixed Dishes</p>
+            <p>Price: 450 ksh</p>
+            <button class="order-button" type="button">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="./image files/Shiro Firfir.webp" alt="Shiro Firfir" class="menu-image">
+            <h3>Shiro Firfir</h3>
+            <p>Combination of Shiro and Injera</p>
+            <p>Price: 300 ksh</p>
+            <button class="order-button" type="button">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="./image files/Shiro.jpeg" alt="Shiro" class="menu-image">
+            <h3>Shiro</h3>
+            <p>Shiro of tshali</p>
+            <p>Price: 250 ksh</p>
+            <button class="order-button" type="button">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="./image files/Beet Salad.webp" alt="Beet Salad" class="menu-image">
+            <h3>Beet Salad</h3>
+            <p>Habesha food for vegetarians</p>
+            <p>Price: 350 ksh</p>
+            <button class="order-button" type="button">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="./image files/Fasting Fitfit.webp" alt="Fasting Fitfit food" class="menu-image">
+            <h3>Fasting Fitfit</h3>
+            <p>Habesha food for fasting people</p>
+            <p>Price: 350 ksh</p>
+            <button class="order-button" type="button">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="./image files/Timatim Salata.webp" alt="Timatim Salata" class="menu-image">
+            <h3>Timatim Salata</h3>
+            <p>Salad with Timatim and Injera</p>
+            <p>Price: 200 ksh</p>
+            <button class="order-button" type="button">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="./image files/Keyeser (Beetroot).webp" alt="Keyeser (Beetroot)" class="menu-image">
+            <h3>Keyeser (Beetroot)</h3>
+            <p>Habesha food with Beetroot</p>
+            <p>Price: 280 ksh</p>
+            <button class="order-button" type="button">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="./image files/hlbet.jpg" alt="Helbet" class="menu-image">
+            <h3>Helbet</h3>
+            <p>Crushed Cheek Peas</p>
+            <p>Price: 180 ksh</p>
+            <button class="order-button" type="button">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="./image files/Ga'at.jpg" alt="Porridge" class="menu-image">
+            <h3>Ga'at</h3>
+            <p>Habesha Porridge</p>
+            <p>Price: 250 ksh</p>
+            <button class="order-button" type="button">Order</button>
+        </div>
+        <!-- Add other menu items similarly -->
+    </main>
+
+    <!-- Hidden form for order submission -->
+    <form id="orderForm" action="./php files/order.php" method="POST" style="display: none;">
+        <input type="hidden" id="orderItemName" name="menu_item">
+        <input type="hidden" id="orderItemPrice" name="item_price">
+    </form>
+</body>
+</html>
